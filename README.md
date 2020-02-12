@@ -9,3 +9,4 @@ Using a home-grown ORM, the app utilizes 3 basic CRUD functions:
 3. CREATE a new sushi roll using the form input, which hits the /burger/create route in express to insert a new sushi roll into the MySQL database and sends the sushi roll to the ready to be eaten column.
 
 ## Demo
+<img src="public/js/sushi.gif" alt="sushiGif" height="300" width="600"></img>
