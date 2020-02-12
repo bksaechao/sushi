@@ -1,6 +1,6 @@
 # Eat Da Sushi!
 ## Overview
-A Node, Express, Handlebars, and MySQL sushi app that lets users input the names of sushi they'd like to eat... and then devour them! Please check out the launched app on Heroku here!
+A Node, Express, Handlebars, and MySQL sushi app that lets users input the names of sushi they'd like to eat... and then devour them!
 
 ## How it works
 Using a home-grown ORM, the app utilizes 3 basic CRUD functions:
