@@ -1,0 +1,54 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-4 not-devoured">
+
+            {{#each hbObj}}
+            {{#unless this.devoured}}
+
+
+            <div class="card" style="width: 18rem;">
+
+                <div class="card-body">
+                    <h5 class="card-title">{{this.sushi_name}}</h5>
+                    <button data-id={{this.id}} class="devour" type="submit" class="btn btn-primary">Itadakimasu!</button>
+
+                </div>
+            </div>
+            {{/unless}}
+            {{/each}}
+        </div>
+        <div class="col-md-4 sushi">
+            <img src="./js/sushi.png">
+        </div>
+        <div class="col-md-4 devoured">
+            {{#each hbObj}}
+            {{#if this.devoured}}
+
+
+            <div class="card" style="width: 18rem;">
+
+                <div class="card-body">
+                    <h5 class="card-title">{{this.sushi_name}}</h5>
+
+                </div>
+            </div>
+            {{/if}}
+            {{/each}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <form>
+                <div class="form-group">
+                    <label>Sushi Name</label>
+                    <input id="sushi-name" type="text" class="form-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">Irashaimase!</small>
+                </div>
+
+                <button id="sushi-submit" type="submit" class="btn btn-primary">Hai</button>
+            </form>
+        </div>
+    </div>
+</div>
